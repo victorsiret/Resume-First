@@ -19,21 +19,26 @@
         Internationally oriented candidate, has lived 7 years outside of France, studied abroad for 3 years in Montreal, looking to work abroad in order to improve
         language skills and to discover different cultures. Has completed one internship and worked professionally before starting a master degree.
         </div>
-        <div class="overview plus" onclick="showOverview()">+&nbsp;&nbsp;</div>
+        <div class="overview plus" onclick="showOverview()" onmouseenter="highlightOver()" 
+        onmouseout="unhighlightOver()">+&nbsp;&nbsp;</div>
     </div>
 
 <!-- Contact -->
     <div>
         <div class="h1">Contact</div>
         <div>
-            <a href="mailto:victorsiret@gmail.com">victorsiret@gmail.com</a><br>
-            <a href="tel:+33602128094">+33 6 02 12 80 94</a><br>
+            <a href="mailto:victorsiret@gmail.com" class="email" onmouseenter="hlemail()"
+            onmouseout="uhlemail()">victorsiret@gmail.com</a><br>
+            <a href="tel:+33602128094" class="phone" onmouseenter="hlphone()"
+            onmouseout="uhlphone()">+33 6 02 12 80 94</a><br>
         </div>
         <div class="hideme">    
             19 rue Volta<br>
             92800, Puteaux<br>
             23rd of November, 1994<br>
         </div>
+        <div class="contact plus" onclick="showContact()" onmouseenter="highlightContact()" 
+        onmouseout="unhighlightContact()">+&nbsp;&nbsp;</div>
     </div>
 
 <!-- Education -->
