@@ -1,3 +1,4 @@
+/*Load Lato Fonts*/
 @font-face {
     font-family: "Lato-Light";
     src:url("./Fonts/Lato-Light.ttf");
@@ -13,36 +14,61 @@
     src:url("./Fonts/Lato-Black.ttf");
     }
 
+@font-face {
+    font-family: "Lato-Hair";
+    src:url("./Fonts/Lato-Hairline.ttf");
+    }
+
+
+
+/*General Settings*/
 * {
-    font-family: "Lato-Light";
+    font-family: "Lato";
     font-size: 1.6vw;
+    color: rgb(34, 34, 34);
 }
 
+/*Grid and alignment*/
 .grid {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-gap: 3% 3%;
 }
 
+.right {
+    text-align: right;
+}
+
+/*Bold Headers*/
 .h1 {
     font-family: "Lato-Black";
     font-size: 4vw;
     text-transform: uppercase;
 }
 
+/*Plus Signs*/
 .plus {
     font-family: "Lato-Black";
     font-size: 2vw;
 }
 
-.right {
-    text-align: right;
+.plus:hover {
+    color: tomato;
 }
 
+/*Hyperlinks*/
 a {
-    color: rgb(185, 56, 33);
+    color: rgb(219, 49, 19);
 }
 
 a:hover {
     color: tomato;
+}
+
+.limit400 {
+    color: blue;
+}
+
+.limit1200 {
+    color: yellow;
 }

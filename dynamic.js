@@ -22,15 +22,6 @@ function showOverview() {
   }
 }
 
-//Highlight overview
-
-function highlightOver() {
-  document.getElementsByClassName('plus')[0].style.color = 'tomato';
-}
-function unhighlightOver() {
-  document.getElementsByClassName('plus')[0].style.color = 'black';
-}
-
 //CONTACT
 //Show extra contact info
 
@@ -48,12 +39,4 @@ function showContact() {
   }
 }
 
-//Highlight contact
-
-function highlightContact() {
-  document.getElementsByClassName('plus')[1].style.color = 'tomato';
-}
-function unhighlightContact() {
-  document.getElementsByClassName('plus')[1].style.color = 'black';
-}
-
+//TESTER
