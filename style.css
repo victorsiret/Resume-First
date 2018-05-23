@@ -20,4 +20,5 @@
 .h1 {
     font-family: "Lato-Black";
     font-size: 200%;
+    text-transform: uppercase;
 }
