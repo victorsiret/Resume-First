@@ -15,10 +15,26 @@
 
 * {
     font-family: "Lato-Light";
+    font-size: 1.6vw;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 20px 20px;
 }
 
 .h1 {
     font-family: "Lato-Black";
     font-size: 4vw;
     text-transform: uppercase;
+}
+
+.plus {
+    font-family: "Lato-Black";
+    font-size: 2vw;
+}
+
+.right {
+    text-align: right;
 }
