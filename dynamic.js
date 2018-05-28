@@ -46,13 +46,13 @@ function showLang() {
 var SE = 1
 
 function showEdu() {
-  if (SL === 1) {
+  if (SE === 1) {
   document.getElementsByClassName('hideme')[2].style.display = 'initial';
-  document.getElementsByClassName('lang')[0].textContent = '-';
-  SL = 0;}
+  document.getElementsByClassName('edu')[0].textContent = '-';
+  SE = 0;}
   else {
   document.getElementsByClassName('hideme')[2].style.display = 'none';
-  document.getElementsByClassName('lang')[0].textContent = '+';
-  SL = 1;
+  document.getElementsByClassName('edu')[0].textContent = '+';
+  SE = 1;
   }
 }
