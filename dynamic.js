@@ -4,6 +4,9 @@
 [].forEach.call(document.querySelectorAll('.hideme2'), function (el) {
     el.style.display = 'none';
   });
+[].forEach.call(document.querySelectorAll('.hideme3'), function (el) {
+    el.style.display = 'none';
+  });
 
 //EXPAND ALL
 
@@ -13,15 +16,18 @@ function expandAll() {
     [].forEach.call(document.querySelectorAll('.hideme'), function (el) {
       el.style.display = 'initial';
     });
-  [].forEach.call(document.querySelectorAll('.hideme2'), function (el) {
+    [].forEach.call(document.querySelectorAll('.hideme2'), function (el) {
+      el.style.display = 'initial';
+    });
+    [].forEach.call(document.querySelectorAll('.hideme3'), function (el) {
       el.style.display = 'initial';
     });
     document.getElementsByClassName('contact')[0].textContent = '-';
     document.getElementsByClassName('lang')[0].textContent = '-';
     document.getElementsByClassName('edu')[0].textContent = '-';
-    document.getElementsByClassName('msof')[0].textContent = '-';
-    document.getElementsByClassName('prg')[0].textContent = '-';
-    document.getElementsByClassName('adobe')[0].textContent = '-';
+    document.getElementsByClassName('msof')[0].textContent = 'Microsoft Office -';
+    document.getElementsByClassName('prg')[0].textContent = 'Programming -';
+    document.getElementsByClassName('adobe')[0].textContent = 'Adobe Creative Suite -';
     document.getElementsByClassName('expand')[0].textContent = 'Minimize All';
     SC = 0; SL = 0; SE = 0; MSOF = 0; ADOBE = 0; PRG = 0; XA = 0;
   }
@@ -29,15 +35,18 @@ function expandAll() {
     [].forEach.call(document.querySelectorAll('.hideme'), function (el) {
       el.style.display = 'none';
     });
-  [].forEach.call(document.querySelectorAll('.hideme2'), function (el) {
+    [].forEach.call(document.querySelectorAll('.hideme2'), function (el) {
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.hideme3'), function (el) {
       el.style.display = 'none';
     });
     document.getElementsByClassName('contact')[0].textContent = '+';
     document.getElementsByClassName('lang')[0].textContent = '+';
     document.getElementsByClassName('edu')[0].textContent = '+';
-    document.getElementsByClassName('msof')[0].textContent = '+';
-    document.getElementsByClassName('prg')[0].textContent = '+';
-    document.getElementsByClassName('adobe')[0].textContent = '+';
+    document.getElementsByClassName('msof')[0].textContent = 'Microsoft Office +';
+    document.getElementsByClassName('prg')[0].textContent = 'Programming +';
+    document.getElementsByClassName('adobe')[0].textContent = 'Adobe +';
     document.getElementsByClassName('expand')[0].textContent = 'Expand All';
     SC = 1; SL = 1; SE = 1; MSOF = 1; ADOBE = 1; PRG = 1; XA = 1;
   }
@@ -104,11 +113,11 @@ var MSOF = 1;
 function msof() {
   if (MSOF === 1) {
   document.getElementsByClassName('hideme2')[0].style.display = 'initial';
-  document.getElementsByClassName('msof')[0].textContent = '-';
+  document.getElementsByClassName('msof')[0].textContent = 'Microsoft Office -';
   MSOF = 0;}
   else {
   document.getElementsByClassName('hideme2')[0].style.display = 'none';
-  document.getElementsByClassName('msof')[0].textContent = '+';
+  document.getElementsByClassName('msof')[0].textContent = 'Microsoft Office +';
   MSOF = 1;
   }
 }
@@ -120,11 +129,11 @@ var ADOBE = 1;
 function adobe() {
   if (ADOBE === 1) {
   document.getElementsByClassName('hideme2')[1].style.display = 'initial';
-  document.getElementsByClassName('adobe')[0].textContent = '-';
+  document.getElementsByClassName('adobe')[0].textContent = 'Adobe Creative Suite -';
   ADOBE = 0;}
   else {
   document.getElementsByClassName('hideme2')[1].style.display = 'none';
-  document.getElementsByClassName('adobe')[0].textContent = '+';
+  document.getElementsByClassName('adobe')[0].textContent = 'Adobe Creative Suite +';
   ADOBE = 1;
   }
 }
@@ -136,11 +145,78 @@ var PRG = 1;
 function prg() {
   if (PRG === 1) {
   document.getElementsByClassName('hideme2')[2].style.display = 'initial';
-  document.getElementsByClassName('prg')[0].textContent = '-';
+  document.getElementsByClassName('prg')[0].textContent = 'Programming -';
   PRG = 0;}
   else {
   document.getElementsByClassName('hideme2')[2].style.display = 'none';
-  document.getElementsByClassName('prg')[0].textContent = '+';
+  document.getElementsByClassName('prg')[0].textContent = 'Programming +';
   PRG = 1;
+  }
+}
+
+var NOTE = 1;
+
+function showNote() {
+  if (NOTE === 1) {
+  document.getElementsByClassName('hideme2')[3].style.display = 'initial';
+  NOTE = 0;}
+  else {
+  document.getElementsByClassName('hideme2')[3].style.display = 'none';
+  NOTE = 1;
+  }
+}
+
+//EDUCATION
+//Expand ESSEC
+
+var ESSEC = 1;
+
+function showESSEC() {
+  if (ESSEC === 1) {
+  document.getElementsByClassName('hideme3')[0].style.display = 'initial';
+  document.getElementsByClassName('education')[0].textContent = 
+  '- Master in Management (MSc) 2019 - ESSEC Business School';
+  ESSEC = 0;}
+  else {
+  document.getElementsByClassName('hideme3')[0].style.display = 'none';
+  document.getElementsByClassName('education')[0].textContent = 
+  '+ Master in Management (MSc) 2019 - ESSEC Business School';
+  ESSEC = 1;
+  }
+}
+
+//Expand Concordia
+
+var conU = 1;
+
+function showConU() {
+  if (conU === 1) {
+  document.getElementsByClassName('hideme3')[1].style.display = 'initial';
+  document.getElementsByClassName('education')[1].textContent = 
+  '- Bachelor of Commerce (BComm) 2015 - Concordia University';
+  conU = 0;}
+  else {
+  document.getElementsByClassName('hideme3')[1].style.display = 'none';
+  document.getElementsByClassName('education')[1].textContent = 
+  '+ Bachelor of Commerce (BComm) 2015 - Concordia University';
+  conU = 1;
+  }
+}
+
+//Expand Lycee
+
+var lycee = 1;
+
+function showOIB() {
+  if (lycee === 1) {
+  document.getElementsByClassName('hideme3')[2].style.display = 'initial';
+  document.getElementsByClassName('education')[2].textContent = 
+  '- Bachelor of Commerce (BComm) 2015 - Concordia University';
+  lycee = 0;}
+  else {
+  document.getElementsByClassName('hideme3')[2].style.display = 'none';
+  document.getElementsByClassName('education')[2].textContent = 
+  '+ Bachelor of Commerce (BComm) 2015 - Concordia University';
+  lycee = 1;
   }
 }

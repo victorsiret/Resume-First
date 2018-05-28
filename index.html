@@ -25,8 +25,8 @@
         onmouseout="uhlphone()">+33 6 02 12 80 94</a><br>
     </div>
     <div class="hideme">    
-        165 rue du G&eacute;n&eacute;ral Leclerc<br>
-        78400, Chatou<br>
+        <a href="https://goo.gl/maps/hwMTgYWhsFy">165 rue du G&eacute;n&eacute;ral Leclerc<br>
+        78400, Chatou<br></a>
         November 23rd, 1994<br>
     </div>
     <div class="contact plus" onclick="showContact()">+</div>
@@ -60,16 +60,33 @@
 
 <!-- Education -->
     <div class=><br>
+
+        <!-- ESSEC -->
         <div class="h1">Education</div>
-        <div>
-        <b>Master in Management (MSc) 2019</b> - <a href="http://www.essec.edu/en/pages/about-essec/2/">
-            ESSEC Business School</a> <br>
-        <b>Bachelor of Commerce (BComm) 2015</b> - <a href="https://www.concordia.ca/jmsb/about.html">
-            Concordia University</a> <br>
-        <b>Baccalaur&eacute;at Scientifique (OIB) 2012</b> - <a href="http://www.americansection.org/Who-we-are">
-            Lycee International de Saint Germain-en-Laye</a>
-        </div>
+        <div class="education" onclick="showESSEC()">+ Master in Management (MSc) 2019 - ESSEC Business School</div>
+            <div class="hideme3">
+                <a href="http://www.essec.edu/en/pages/about-essec/2/">About ESSEC Business School</a><br>
+            <br></div>
+        
+        <!-- JMSB -->
+        <div class="education" onclick="showConU()">+ Bachelor of Commerce (BComm) 2015 - 
+            Concordia University</div>
+            <div class="hideme3 conSubGrid">
+                <div><a href="https://www.concordia.ca/jmsb/about.html">
+            About John Molson's School of Business</a></div>
+                <div class=span3><img src="./Logos/JMSB.png" class="logos"></div><br>
+            </div>
+        
+        <!-- Lycee -->
+        <div class="education" onclick="showOIB()">+ Baccalaur&eacute;at Scientifique (OIB) 2012 - 
+            Lyc&eacute;e International de Saint Germain-en-Laye</div>
+            <div class="hideme3"><a href="http://www.americansection.org/Who-we-are">
+            About the American Section</a>
+            </div>
+
+        <!-- Previous Education -->
         <div class="hideme">
+            <br><br><b>Previous Education</b><br>
             <b>Coll&egrave;ge Marcel Roby (2009)</b> - Saint Germain-en-Laye, France <br>
             <b>Terrill Middle School (2006)</b> - Scotch Plains, New Jersey <br>
             <b>School One (2003)</b> - Scotch Plains, New Jersey
@@ -80,8 +97,8 @@
 <!-- Skills -->
     <div class="right"><br>
         <div class="h1">Skills</div>
-        <div>
-            <b>Microsoft Office</b>&nbsp;&nbsp;&nbsp;<span class="small-plus msof" onclick="msof()">+</span>
+        <div class="skills msof" onclick="msof()">
+            Microsoft Office +<br>
         </div>
         <div class="hideme2">
             Word <span>&#9899;&#9899;&#9899;&#9899;</span><br>
@@ -91,33 +108,47 @@
             Access <span>&#9899;&#9899;&#9898;&#9898;</span><br><br>
         </div>
 
-        <div>
-            <b>Adobe Creative Suite</b>&nbsp;&nbsp;&nbsp;<span class="small-plus adobe" onclick="adobe()">+</span>
+        <div class="skills adobe" onclick="adobe()">
+            Adobe Creative Suite +
         </div>
         <div class="hideme2">
-            Photoshop <span>&#9899;&#9899;&#9899;&#9898;</span><br>
+            <a href="https://www.instagram.com/victorsiret/">Photoshop</a> <span>&#9899;&#9899;&#9899;&#9898;</span><br>
             Illustrator <span>&#9899;&#9899;&#9899;&#9898;</span><br>
             InDesign <span>&#9899;&#9899;&#9898;&#9898;</span><br>
             Premiere <span>&#9899;&#9899;&#9898;&#9898;</span><br>
             After Effects <span>&#9899;&#9898;&#9898;&#9898;</span><br><br>
         </div>
 
-        <div>
-            <b>Programming</b>&nbsp;&nbsp;&nbsp;<span class="small-plus prg" onclick="prg()">+</span>
+
+        <div class="skills prg" onclick="prg()">
+            Programming +<br>
         </div>
         <div class="hideme2">
             HTML <span>&#9899;&#9899;&#9899;&#9898;</span><br>
             CSS <span>&#9899;&#9899;&#9898;&#9898;</span><br>
-            JavaScript <span>&#9899;&#9898;&#9898;&#9898;</span><br>
-            VBA <span>&#9899;&#9899;&#9899;&#9898;</span><br>
-            R <span>&#9899;&#9899;&#9898;&#9898;</span><br><br>
+            <span class=a onclick="showNote()">JavaScript</span> <span>&#9899;&#9898;&#9898;&#9898;</span><br>
+            <div class="hideme2 note">This CV is a custom-made website using HTML, CSS and JavaScript<br><br></div>
+            <a href="./vba.xlsm">VBA</a> <span>&#9899;&#9899;&#9899;&#9898;</span><br>
+            <a href="./r.html">R</a> <span>&#9899;&#9899;&#9898;&#9898;</span><br><br>
         </div>
         <br>
+
         <div class="h1">Interests</div>
-        <div>Automobile/Motorcycles</div>
+        <div>
+            Automobile/Motorcycles<br>
+            <a href="https://drive.google.com/open?id=0B-n3dOjy-35oX09ISXprN2JhN28">Drawing</a>
+        </div>
     </div>
 
 <!-- Experience -->
+    <div>
+        <br>
+        <div class="h1">Experience</div>
+        <div>
+
+        </div>
+    </div>
+
 </div>
 
 <!-- Javascript -->

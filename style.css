@@ -52,38 +52,62 @@
     font-size: 2vw;
 }
 
-.small-plus {
-    font-family: "Lato-Black";
-    font-size: 1.5vw;
-}
-
 .expand {
     font-size: 1.5vw;
 }
 
-.plus:hover {
+.plus:hover, .skills:hover, .education:hover {
     color: tomato;
+    cursor: pointer;
 }
 
-.small-plus:hover {
-    color: tomato;
+.skills, .education {
+    font-family: "Lato-Black";
 }
 
 .expand:hover {
     color: tomato;
 }
 
-/*Hyperlinks*/
+/*Hyperlinks and highlights*/
 a {
     color: rgb(219, 49, 19);
+    text-decoration: none;
 }
 
 a:hover {
     color: tomato;
 }
 
+.a {
+    color: rgb(219, 49, 19);
+}
+
+.a:hover {
+    color: tomato;
+    cursor: pointer;
+}
+
+.note {
+    color:rgb(219, 49, 19);;
+    font-size: 1vw;
+}
+
 /*Bold*/
 b {
     font-family:"Lato-Black";
     font-weight: normal;
+}
+
+/*Images*/
+.logos {
+    width: 20%;
+}
+
+/*Education Mini-Grids*/
+
+/*Concordia*/
+.conSubGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
