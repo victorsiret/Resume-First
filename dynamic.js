@@ -20,7 +20,7 @@ function expandAll() {
       el.style.display = 'initial';
     });
     [].forEach.call(document.querySelectorAll('.hideme3'), function (el) {
-      el.style.display = 'initial';
+      el.style.display = 'grid';
     });
     document.getElementsByClassName('contact')[0].textContent = '-';
     document.getElementsByClassName('lang')[0].textContent = '-';
@@ -28,8 +28,14 @@ function expandAll() {
     document.getElementsByClassName('msof')[0].textContent = 'Microsoft Office -';
     document.getElementsByClassName('prg')[0].textContent = 'Programming -';
     document.getElementsByClassName('adobe')[0].textContent = 'Adobe Creative Suite -';
+    document.getElementsByClassName('education')[2].innerHTML = 
+    '- Baccalaur&eacute;at Scientifique (OIB) 2012 - Lyc&eacute;e International de Saint Germain-en-Laye';
+    document.getElementsByClassName('education')[1].textContent = 
+    '- Bachelor of Commerce (BComm) 2015 - Concordia University';
+    document.getElementsByClassName('education')[0].textContent = 
+    '- Master in Management (MSc) 2019 - ESSEC Business School';
     document.getElementsByClassName('expand')[0].textContent = 'Minimize All';
-    SC = 0; SL = 0; SE = 0; MSOF = 0; ADOBE = 0; PRG = 0; XA = 0;
+    XA = 0; SC = 0; SL = 0; SE = 0; MSOF = 0; ADOBE = 0; PRG = 0; NOTE = 0; lycee = 0; ESSEC = 0; conU = 0 
   }
   else {
     [].forEach.call(document.querySelectorAll('.hideme'), function (el) {
@@ -47,8 +53,14 @@ function expandAll() {
     document.getElementsByClassName('msof')[0].textContent = 'Microsoft Office +';
     document.getElementsByClassName('prg')[0].textContent = 'Programming +';
     document.getElementsByClassName('adobe')[0].textContent = 'Adobe +';
+    document.getElementsByClassName('education')[2].innerHTML = 
+    '+ Baccalaur&eacute;at Scientifique (OIB) 2012 - Lyc&eacute;e International de Saint Germain-en-Laye';
+    document.getElementsByClassName('education')[1].textContent = 
+    '+ Bachelor of Commerce (BComm) 2015 - Concordia University';
+    document.getElementsByClassName('education')[0].textContent = 
+    '+ Master in Management (MSc) 2019 - ESSEC Business School';
     document.getElementsByClassName('expand')[0].textContent = 'Expand All';
-    SC = 1; SL = 1; SE = 1; MSOF = 1; ADOBE = 1; PRG = 1; XA = 1;
+    XA = 1; SC = 1; SL = 1; SE = 1; MSOF = 1; ADOBE = 1; PRG = 1; NOTE = 1; lycee = 1; ESSEC = 1; conU = 1;
   }
 }
 
@@ -173,7 +185,7 @@ var ESSEC = 1;
 
 function showESSEC() {
   if (ESSEC === 1) {
-  document.getElementsByClassName('hideme3')[0].style.display = 'initial';
+  document.getElementsByClassName('hideme3')[0].style.display = 'grid';
   document.getElementsByClassName('education')[0].textContent = 
   '- Master in Management (MSc) 2019 - ESSEC Business School';
   ESSEC = 0;}
@@ -191,7 +203,7 @@ var conU = 1;
 
 function showConU() {
   if (conU === 1) {
-  document.getElementsByClassName('hideme3')[1].style.display = 'initial';
+  document.getElementsByClassName('hideme3')[1].style.display = 'grid';
   document.getElementsByClassName('education')[1].textContent = 
   '- Bachelor of Commerce (BComm) 2015 - Concordia University';
   conU = 0;}
@@ -209,14 +221,14 @@ var lycee = 1;
 
 function showOIB() {
   if (lycee === 1) {
-  document.getElementsByClassName('hideme3')[2].style.display = 'initial';
-  document.getElementsByClassName('education')[2].textContent = 
-  '- Bachelor of Commerce (BComm) 2015 - Concordia University';
+  document.getElementsByClassName('hideme3')[2].style.display = 'grid';
+  document.getElementsByClassName('education')[2].innerHTML = 
+  '- Baccalaur&eacute;at Scientifique (OIB) 2012 - Lyc&eacute;e International de Saint Germain-en-Laye';
   lycee = 0;}
   else {
   document.getElementsByClassName('hideme3')[2].style.display = 'none';
-  document.getElementsByClassName('education')[2].textContent = 
-  '+ Bachelor of Commerce (BComm) 2015 - Concordia University';
+  document.getElementsByClassName('education')[2].innerHTML = 
+  '+ Baccalaur&eacute;at Scientifique (OIB) 2012 - Lyc&eacute;e International de Saint Germain-en-Laye';
   lycee = 1;
   }
 }
