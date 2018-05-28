@@ -6,22 +6,6 @@
   });
 
 
-//OVERVIEW
-//Show overview text
-var SO = 1;
-
-function showOverview() {
-  if (SO === 1) {
-  document.getElementsByClassName('hideme')[0].style.display = 'initial';
-  document.getElementsByClassName('overview')[0].textContent = '-';
-  SO = 0;}
-  else {
-  document.getElementsByClassName('hideme')[0].style.display = 'none';
-  document.getElementsByClassName('overview')[0].textContent = '+';
-  SO = 1;
-  }
-}
-
 //CONTACT
 //Show extra contact info
 
@@ -29,14 +13,46 @@ var SC = 1;
 
 function showContact() {
   if (SC === 1) {
-  document.getElementsByClassName('hideme')[1].style.display = 'initial';
+  document.getElementsByClassName('hideme')[0].style.display = 'initial';
   document.getElementsByClassName('contact')[0].textContent = '-';
   SC = 0;}
   else {
-  document.getElementsByClassName('hideme')[1].style.display = 'none';
+  document.getElementsByClassName('hideme')[0].style.display = 'none';
   document.getElementsByClassName('contact')[0].textContent = '+';
   SC = 1;
   }
 }
 
-//TESTER
+//LANGUAGES
+//Show language text
+
+var SL = 1
+
+function showLang() {
+  if (SL === 1) {
+  document.getElementsByClassName('hideme')[1].style.display = 'initial';
+  document.getElementsByClassName('lang')[0].textContent = '-';
+  SL = 0;}
+  else {
+  document.getElementsByClassName('hideme')[1].style.display = 'none';
+  document.getElementsByClassName('lang')[0].textContent = '+';
+  SL = 1;
+  }
+}
+
+//EDUCATION
+//Show extra education
+
+var SE = 1
+
+function showEdu() {
+  if (SL === 1) {
+  document.getElementsByClassName('hideme')[2].style.display = 'initial';
+  document.getElementsByClassName('lang')[0].textContent = '-';
+  SL = 0;}
+  else {
+  document.getElementsByClassName('hideme')[2].style.display = 'none';
+  document.getElementsByClassName('lang')[0].textContent = '+';
+  SL = 1;
+  }
+}

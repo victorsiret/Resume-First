@@ -24,7 +24,7 @@
 /*General Settings*/
 * {
     font-family: "Lato";
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     color: rgb(34, 34, 34);
 }
 
@@ -52,7 +52,16 @@
     font-size: 2vw;
 }
 
+.small-plus {
+    font-family: "Lato-Black";
+    font-size: 1.5vw;
+}
+
 .plus:hover {
+    color: tomato;
+}
+
+.small-plus:hover {
     color: tomato;
 }
 
@@ -71,4 +80,10 @@ a:hover {
 
 .limit1200 {
     color: yellow;
+}
+
+/*Bold*/
+b {
+    font-family:"Lato-Black";
+    font-weight: normal;
 }
