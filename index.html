@@ -2,7 +2,7 @@
 
 <head>
     <!-- Title -->
-    <title>Victor Siret Resume</title>
+    <title>Victor Siret R&eacute;sum&eacute;</title>
 
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="./style.css">
@@ -11,6 +11,9 @@
 
 <body onresize="changeFonts()">
 <div class="grid">
+<!-- Expand All -->
+    <div></div>
+    <div class="right expand" onclick="expandAll()">Expand All<br></div>
 
 <!-- Victor Siret -->
     <div class="right">
@@ -22,11 +25,11 @@
         onmouseout="uhlphone()">+33 6 02 12 80 94</a><br>
     </div>
     <div class="hideme">    
-        19 rue Volta<br>
-        92800, Puteaux<br>
-        23rd of November, 1994<br>
+        165 rue du G&eacute;n&eacute;ral Leclerc<br>
+        78400, Chatou<br>
+        November 23rd, 1994<br>
     </div>
-    <div class="contact plus" onclick="showContact()">+&nbsp;&nbsp;</div>
+    <div class="contact plus" onclick="showContact()">+</div>
     </div>
 
 <!-- Overview -->
@@ -39,48 +42,85 @@
     </div>
     
 <!-- Languages -->
-    <div class="right">
+    <div class="right"><br>
         <div class=h1>Languages</div>
         <div>
-            <b>English</b> - Fluent<br>
-            <b>French</b> - Fluent<br>
-            <b>Spanish</b> - Professional<br>
-            <b>German</b> - Professional<br>
+            <b>English</b> <span>&#9899;&#9899;&#9899;&#9899;</span><br>
+            <b>French</b> <span>&#9899;&#9899;&#9899;&#9899;</span><br>
+            <b>Spanish</b> <span>&#9899;&#9899;&#9899;&#9898;</span><br>
+            <b>German</b> <span>&#9899;&#9899;&#9898;&#9898;</span><br>
         </div>
         <div class="hideme">
-            <b>Italian</b> - Beginner<br>
-            <b>Danish</b> - Beginner<br>
+            <b>Italian</b> <span>&#9899;&#9898;&#9898;&#9898;</span><br>
+            <b>Danish</b> <span>&#9899;&#9898;&#9898;&#9898;</span><br>
         </div>
-        <div class="lang plus" onclick="showLang()">+&nbsp;&nbsp;</div>
+        <div class="lang plus" onclick="showLang()">+</div>
     </div>
 
 
 <!-- Education -->
-    <div class=>
+    <div class=><br>
         <div class="h1">Education</div>
         <div>
-        <b>Master in Management (MSc)</b> - <a href="http://www.essec.edu/en/pages/about-essec/2/">
+        <b>Master in Management (MSc) 2019</b> - <a href="http://www.essec.edu/en/pages/about-essec/2/">
             ESSEC Business School</a> <br>
-        <b>Bachelor of Commerce (BComm)</b> - <a href="https://www.concordia.ca/jmsb/about.html">
-            Concordia University</a>
-        </div>
-        <div class="hideme">
-        <b>Baccalaureat Scientifique(OIB)</b> - <a href="http://www.americansection.org/Who-we-are">
+        <b>Bachelor of Commerce (BComm) 2015</b> - <a href="https://www.concordia.ca/jmsb/about.html">
+            Concordia University</a> <br>
+        <b>Baccalaur&eacute;at Scientifique (OIB) 2012</b> - <a href="http://www.americansection.org/Who-we-are">
             Lycee International de Saint Germain-en-Laye</a>
         </div>
-        <div class="edu plus" onclick="showEdu()">+&nbsp;&nbsp;</div>
+        <div class="hideme">
+            <b>Coll&egrave;ge Marcel Roby (2009)</b> - Saint Germain-en-Laye, France <br>
+            <b>Terrill Middle School (2006)</b> - Scotch Plains, New Jersey <br>
+            <b>School One (2003)</b> - Scotch Plains, New Jersey
+        </div>
+        <div class="edu plus" onclick="showEdu()">+</div>
     </div>
 
 <!-- Skills -->
-    <div class="right">
+    <div class="right"><br>
         <div class="h1">Skills</div>
         <div>
-            Adobe
+            <b>Microsoft Office</b>&nbsp;&nbsp;&nbsp;<span class="small-plus msof" onclick="msof()">+</span>
         </div>
+        <div class="hideme2">
+            Word <span>&#9899;&#9899;&#9899;&#9899;</span><br>
+            Excel <span>&#9899;&#9899;&#9899;&#9899;</span><br>
+            Powerpoint <span>&#9899;&#9899;&#9899;&#9899;</span><br>
+            Outlook <span>&#9899;&#9899;&#9899;&#9898;</span><br>
+            Access <span>&#9899;&#9899;&#9898;&#9898;</span><br><br>
+        </div>
+
+        <div>
+            <b>Adobe Creative Suite</b>&nbsp;&nbsp;&nbsp;<span class="small-plus adobe" onclick="adobe()">+</span>
+        </div>
+        <div class="hideme2">
+            Photoshop <span>&#9899;&#9899;&#9899;&#9898;</span><br>
+            Illustrator <span>&#9899;&#9899;&#9899;&#9898;</span><br>
+            InDesign <span>&#9899;&#9899;&#9898;&#9898;</span><br>
+            Premiere <span>&#9899;&#9899;&#9898;&#9898;</span><br>
+            After Effects <span>&#9899;&#9898;&#9898;&#9898;</span><br><br>
+        </div>
+
+        <div>
+            <b>Programming</b>&nbsp;&nbsp;&nbsp;<span class="small-plus prg" onclick="prg()">+</span>
+        </div>
+        <div class="hideme2">
+            HTML <span>&#9899;&#9899;&#9899;&#9898;</span><br>
+            CSS <span>&#9899;&#9899;&#9898;&#9898;</span><br>
+            JavaScript <span>&#9899;&#9898;&#9898;&#9898;</span><br>
+            VBA <span>&#9899;&#9899;&#9899;&#9898;</span><br>
+            R <span>&#9899;&#9899;&#9898;&#9898;</span><br><br>
+        </div>
+        <br>
+        <div class="h1">Interests</div>
+        <div>Automobile/Motorcycles</div>
     </div>
+
+<!-- Experience -->
+</div>
 
 <!-- Javascript -->
 <script src="./dynamic.js"></script>
 
-</div>
 </body>

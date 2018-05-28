@@ -31,8 +31,8 @@
 /*Grid and alignment*/
 .grid {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-gap: 3% 3%;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0% 3%;
 }
 
 .right {
@@ -57,11 +57,19 @@
     font-size: 1.5vw;
 }
 
+.expand {
+    font-size: 1.5vw;
+}
+
 .plus:hover {
     color: tomato;
 }
 
 .small-plus:hover {
+    color: tomato;
+}
+
+.expand:hover {
     color: tomato;
 }
 
@@ -72,14 +80,6 @@ a {
 
 a:hover {
     color: tomato;
-}
-
-.limit400 {
-    color: blue;
-}
-
-.limit1200 {
-    color: yellow;
 }
 
 /*Bold*/
