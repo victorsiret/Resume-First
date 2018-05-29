@@ -29,8 +29,7 @@
         font-size:9vw;
     }
     .grid {
-        grid-template-columns: 1fr;
-        grid-gap: 0% 0%;
+        display: initial;
         margin: 0px 10px;
     }
     .expand {
@@ -41,8 +40,7 @@
 /*Min Width 400px*/
 @media only screen and (min-width: 450px) {
     .grid {
-        grid-template-columns: 1fr;
-        grid-gap: 0% 0%;
+        display: initial;
         margin: 0px 10px;
     }
     /*General*/
@@ -69,12 +67,13 @@
 /*Min Width 580px*/
 @media only screen and (min-width: 580px) {
     .grid {
+        display: grid;
         grid-template-columns: 1fr 2fr;
         grid-gap: 0% 3%;
     }
     /*General*/
     * {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     .h1 {
         font-size: 4vw;
@@ -99,10 +98,11 @@
     .grid {
         grid-template-columns: 1fr 2fr;
         grid-gap: 0% 3%;
+        display: grid;
     }
     /*General*/
     * {
-        font-size: 1.5vw;
+        font-size: 1.8vw;
     }
     .h1 {
         font-size: 4vw;
@@ -130,15 +130,17 @@
         grid-template-columns: 1fr 2fr;
         grid-gap: 0% 3%;
         margin: 0px 3%;
+        display: grid;
     }
 }
 
-/*Over 1200px*/
-@media only screen and (min-width: 1200px) {
+/*Over 1150px*/
+@media only screen and (min-width: 1150px) {
     .grid {
         grid-template-columns: 1fr 2fr;
         grid-gap: 0% 3%;
         margin: 0px 10%;
+        display: grid;
     }
     .h1 {
         font-size: 3.3vw;
@@ -155,10 +157,6 @@
 }
 
 /*Grid and alignment*/
-.grid {
-    display: grid;
-}
-
 .right {
     text-align: right;
 }
