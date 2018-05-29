@@ -20,86 +20,21 @@
     }
 
 /*Media Queries*/
-
-/*Over 1200px*/
-@media only screen and (min-width: 1200px) {
-    .grid {
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 0% 3%;
-        margin: 0px 10%;
+/*Max Width 399px*/
+@media only screen and (min-width: 200px) {
+    * {
+        font-size:5vw;
     }
     .h1 {
-        font-size: 3.3vw;
-    }
-    * {
-        font-size: 1.2vw;
-    }
-}
-
-/*Over 900px*/
-@media only screen and (min-width: 900px) {
-    .expand {
-        display: initial;
+        font-size:9vw;
     }
     .grid {
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 0% 3%;
-        margin: 0px 3%;
-    }
-}
-
-/*Min Width 750px*/
-@media only screen and (min-width: 750px) {
-    
-    .grid {
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 0% 3%;
-    }
-    /*General*/
-    * {
-        font-size: 1.5vw;
-    }
-    .h1 {
-        font-size: 4vw;
-    }
-    /*Plus signs*/
-    .plus {
-        font-size: 2vw;
-    }
-    /*Align right margin*/
-    .right {
-        padding-right: 10%;
-        border-right: 2px rgb(34, 34, 34) solid;
+        grid-template-columns: 1fr;
+        grid-gap: 0% 0%;
+        margin: 0px 10px;
     }
     .expand {
-        display: initial;
-    }
-}
-
-/*Min Width 580px*/
-@media only screen and (min-width: 580px) {
-    .grid {
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 0% 3%;
-    }
-    /*General*/
-    * {
-        font-size: 2vw;
-    }
-    .h1 {
-        font-size: 4vw;
-    }
-    /*Plus signs*/
-    .plus {
-        font-size: 2.5vw;
-    }
-    /*Align right margin*/
-    .right {
-        padding-right: 10%;
-        border-right: 2px rgb(34, 34, 34) solid;
-    }
-    .expand {
-        display: initial;
+        display: none;
     }
 }
 
@@ -131,21 +66,85 @@
     }
 }
 
-/*Max Width 399px*/
-@media only screen and (min-width: 200px) {
+/*Min Width 580px*/
+@media only screen and (min-width: 580px) {
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0% 3%;
+    }
+    /*General*/
     * {
-        font-size:5vw;
+        font-size: 2vw;
     }
     .h1 {
-        font-size:9vw;
+        font-size: 4vw;
     }
-    .grid {
-        grid-template-columns: 1fr;
-        grid-gap: 0% 0%;
-        margin: 0px 10px;
+    /*Plus signs*/
+    .plus {
+        font-size: 2.5vw;
+    }
+    /*Align right margin*/
+    .right {
+        padding-right: 10%;
+        border-right: 2px rgb(34, 34, 34) solid;
     }
     .expand {
-        display: none;
+        display: initial;
+    }
+}
+
+/*Min Width 750px*/
+@media only screen and (min-width: 750px) {
+    
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0% 3%;
+    }
+    /*General*/
+    * {
+        font-size: 1.5vw;
+    }
+    .h1 {
+        font-size: 4vw;
+    }
+    /*Plus signs*/
+    .plus {
+        font-size: 2vw;
+    }
+    /*Align right margin*/
+    .right {
+        padding-right: 10%;
+        border-right: 2px rgb(34, 34, 34) solid;
+    }
+    .expand {
+        display: initial;
+    }
+}
+
+/*Over 900px*/
+@media only screen and (min-width: 900px) {
+    .expand {
+        display: initial;
+    }
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0% 3%;
+        margin: 0px 3%;
+    }
+}
+
+/*Over 1200px*/
+@media only screen and (min-width: 1200px) {
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0% 3%;
+        margin: 0px 10%;
+    }
+    .h1 {
+        font-size: 3.3vw;
+    }
+    * {
+        font-size: 1.2vw;
     }
 }
 
