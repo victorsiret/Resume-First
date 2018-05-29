@@ -19,26 +19,68 @@
     src:url("./Fonts/Lato-Hairline.ttf");
     }
 
+/*Media Queries*/
+@media only screen and (max-width: 600px) {
+    .h1 {
+        font-size: 8vw;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0% 0%;
+    }
+    /*General*/
+    * {
+        font-size: 3.5vw;
+    }
+    /*Plus signs*/
+    .plus {
+        font-size: 5vw;
+    }
+    /*No Border*/
+    .right {
+        padding-right: 0%;
+        border-right: 0px;
+    }
+}
 
+@media only screen and (min-width: 601px) {
+    .h1 {
+        font-size: 4vw;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0% 3%;
+    }
+    /*General*/
+    * {
+        font-size: 1.5vw;
+    }
+    /*Plus signs*/
+    .plus {
+        font-size: 2vw;
+    }
+    /*Align right margin*/
+    .right {
+        padding-right: 10%;
+        border-right: 2px rgb(34, 34, 34) solid;
+    }
+}
 
 /*General Settings*/
 * {
     font-family: "Lato";
-    font-size: 1.5vw;
     color: rgb(34, 34, 34);
 }
 
 /*Grid and alignment*/
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 0% 3%;
 }
 
 .right {
     text-align: right;
-    padding-right: 10%;
-    border-right: 2px rgb(34, 34, 34) solid;
 }
 
 .right2 {
@@ -52,14 +94,12 @@
 /*Bold Headers*/
 .h1 {
     font-family: "Lato-Black";
-    font-size: 4vw;
     text-transform: uppercase;
 }
 
 /*Plus Signs*/
 .plus {
     font-family: "Lato-Black";
-    font-size: 2vw;
 }
 
 .expand {
