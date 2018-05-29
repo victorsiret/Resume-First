@@ -21,7 +21,7 @@
 
 /*Media Queries*/
 /*Max Width 399px*/
-@media only screen and (min-width: 200px) {
+@media (min-width: 200px) {
     * {
         font-size:5vw;
     }
@@ -38,7 +38,7 @@
 }
 
 /*Min Width 400px*/
-@media only screen and (min-width: 450px) {
+@media (min-width: 450px) {
     .grid {
         display: initial;
         margin: 0px 10px;
@@ -59,13 +59,10 @@
         padding-right: 0%;
         border-right: 0px;
     }
-    .expand {
-        display: 'none';
-    }
 }
 
 /*Min Width 580px*/
-@media only screen and (min-width: 580px) {
+@media (min-width: 580px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -89,11 +86,12 @@
     }
     .expand {
         display: initial;
+        font-size: 2.5vw;
     }
 }
 
 /*Min Width 750px*/
-@media only screen and (min-width: 750px) {
+@media (min-width: 750px) {
     
     .grid {
         grid-template-columns: 1fr 2fr;
@@ -116,15 +114,12 @@
         padding-right: 10%;
         border-right: 2px rgb(34, 34, 34) solid;
     }
-    .expand {
-        display: initial;
-    }
 }
 
 /*Over 900px*/
-@media only screen and (min-width: 900px) {
+@media (min-width: 900px) {
     .expand {
-        display: initial;
+        font-size: 2vw;
     }
     .grid {
         grid-template-columns: 1fr 2fr;
@@ -135,7 +130,7 @@
 }
 
 /*Over 1150px*/
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
     .grid {
         grid-template-columns: 1fr 2fr;
         grid-gap: 0% 3%;
@@ -147,6 +142,44 @@
     }
     * {
         font-size: 1.2vw;
+    }
+}
+
+/*Over 1400px*/
+@media (min-width: 1400px) {
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0% 3%;
+        margin: 0px 15%;
+        display: grid;
+    }
+    .h1 {
+        font-size: 2.8vw;
+    }
+    * {
+        font-size: 1vw;
+    }
+    .expand {
+        font-size: 1vw;
+    }
+}
+
+/*Over 1900px*/
+@media (min-width: 2000px) {
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0% 3%;
+        margin: 0px 25%;
+        display: grid;
+    }
+    .h1 {
+        font-size: 2.3vw;
+    }
+    * {
+        font-size: 0.8vw;
+    }
+    .expand {
+        font-size: 1vw;
     }
 }
 
