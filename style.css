@@ -20,18 +20,31 @@
     }
 
 /*Media Queries*/
-@media only screen and (max-width: 600px) {
+/*Max Width 600px*/
+@media only screen and (max-width: 399px) {
+    * {
+        font-size:5vw;
+    }
     .h1 {
-        font-size: 8vw;
+        font-size:10vw;
     }
     .grid {
-        display: grid;
+        margin: 0px 10px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .grid {
         grid-template-columns: 1fr;
         grid-gap: 0% 0%;
+        margin: 0px 10px;
     }
     /*General*/
     * {
         font-size: 3.5vw;
+    }
+    .h1 {
+        font-size: 8vw;
     }
     /*Plus signs*/
     .plus {
@@ -44,18 +57,19 @@
     }
 }
 
-@media only screen and (min-width: 601px) {
-    .h1 {
-        font-size: 4vw;
-    }
+/*Min Width 620px*/
+@media only screen and (min-width: 620px) {
+    
     .grid {
-        display: grid;
         grid-template-columns: 1fr 2fr;
         grid-gap: 0% 3%;
     }
     /*General*/
     * {
         font-size: 1.5vw;
+    }
+    .h1 {
+        font-size: 4vw;
     }
     /*Plus signs*/
     .plus {
@@ -65,6 +79,26 @@
     .right {
         padding-right: 10%;
         border-right: 2px rgb(34, 34, 34) solid;
+    }
+}
+
+/*Over 900px*/
+@media only screen and (min-width: 900px) {
+    .grid {
+        margin: 0px 3%;
+    }
+}
+
+/*Over 1200px*/
+@media only screen and (min-width: 1200px) {
+    .grid {
+        margin: 0px 10%;
+    }
+    .h1 {
+        font-size: 3.3vw;
+    }
+    * {
+        font-size: 1.2vw;
     }
 }
 
