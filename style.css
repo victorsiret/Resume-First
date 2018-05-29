@@ -20,7 +20,7 @@
     }
 
 /*Media Queries*/
-/*Max Width 600px*/
+/*Max Width 399px*/
 @media only screen and (max-width: 399px) {
     * {
         font-size:5vw;
@@ -29,10 +29,16 @@
         font-size:10vw;
     }
     .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0% 0%;
         margin: 0px 10px;
+    }
+    .expand {
+        display: none;
     }
 }
 
+/*Min Width 400px*/
 @media only screen and (min-width: 400px) {
     .grid {
         grid-template-columns: 1fr;
@@ -54,6 +60,9 @@
     .right {
         padding-right: 0%;
         border-right: 0px;
+    }
+    .expand {
+        display: 'none';
     }
 }
 
@@ -80,11 +89,19 @@
         padding-right: 10%;
         border-right: 2px rgb(34, 34, 34) solid;
     }
+    .expand {
+        display: initial;
+    }
 }
 
 /*Over 900px*/
 @media only screen and (min-width: 900px) {
+    .expand {
+        display: initial;
+    }
     .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0% 3%;
         margin: 0px 3%;
     }
 }
@@ -92,6 +109,8 @@
 /*Over 1200px*/
 @media only screen and (min-width: 1200px) {
     .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0% 3%;
         margin: 0px 10%;
     }
     .h1 {
