@@ -13,6 +13,7 @@
 var XA = 1;
 function expandAll() {
   if (XA === 1) {
+  //DISPLAY ALL
     [].forEach.call(document.querySelectorAll('.hideme'), function (el) {
       el.style.display = 'initial';
     });
@@ -22,6 +23,8 @@ function expandAll() {
     [].forEach.call(document.querySelectorAll('.hideme3'), function (el) {
       el.style.display = 'grid';
     });
+
+  //CHANGE TEXT
     document.getElementsByClassName('contact')[0].textContent = '-';
     document.getElementsByClassName('lang')[0].textContent = '-';
     document.getElementsByClassName('edu')[0].textContent = '-';
@@ -34,10 +37,16 @@ function expandAll() {
     '- Bachelor of Commerce (BComm) 2015 - Concordia University';
     document.getElementsByClassName('education')[0].textContent = 
     '- Master in Management (MSc) 2019 - ESSEC Business School';
+    document.getElementsByClassName('experience')[1].innerHTML = '- Digital Marketing Assistant - Guerlain Canada 2015';
+    document.getElementsByClassName('experience')[0].innerHTML = '- Sales Production - Vente-priv&eacute;e 2016';
     document.getElementsByClassName('expand')[0].textContent = 'Minimize All';
-    XA = 0; SC = 0; SL = 0; SE = 0; MSOF = 0; ADOBE = 0; PRG = 0; NOTE = 0; lycee = 0; ESSEC = 0; conU = 0 
+
+  //VARIABLE SET
+    XA = 0; SC = 0; SL = 0; SE = 0; MSOF = 0; ADOBE = 0; PRG = 0; NOTE = 0; lycee = 0; ESSEC = 0; conU = 0;
+    VP = 0; Guerlain = 0; 
   }
   else {
+  //DISPLAY NONE
     [].forEach.call(document.querySelectorAll('.hideme'), function (el) {
       el.style.display = 'none';
     });
@@ -47,6 +56,8 @@ function expandAll() {
     [].forEach.call(document.querySelectorAll('.hideme3'), function (el) {
       el.style.display = 'none';
     });
+
+  //CHANGE TEXT
     document.getElementsByClassName('contact')[0].textContent = '+';
     document.getElementsByClassName('lang')[0].textContent = '+';
     document.getElementsByClassName('edu')[0].textContent = '+';
@@ -59,8 +70,13 @@ function expandAll() {
     '+ Bachelor of Commerce (BComm) 2015 - Concordia University';
     document.getElementsByClassName('education')[0].textContent = 
     '+ Master in Management (MSc) 2019 - ESSEC Business School';
+    document.getElementsByClassName('experience')[1].innerHTML = '+ Digital Marketing Assistant - Guerlain Canada 2015';
+    document.getElementsByClassName('experience')[0].innerHTML = '+ Sales Production - Vente-priv&eacute;e 2016';
     document.getElementsByClassName('expand')[0].textContent = 'Expand All';
+
+  //VARIABLE RESET
     XA = 1; SC = 1; SL = 1; SE = 1; MSOF = 1; ADOBE = 1; PRG = 1; NOTE = 1; lycee = 1; ESSEC = 1; conU = 1;
+    VP = 0; Guerlain = 0
   }
 }
 
@@ -230,5 +246,37 @@ function showOIB() {
   document.getElementsByClassName('education')[2].innerHTML = 
   '+ Baccalaur&eacute;at Scientifique (OIB) 2012 - Lyc&eacute;e International de Saint Germain-en-Laye';
   lycee = 1;
+  }
+}
+
+//EXPERIENCE
+//Expand VP
+var VP = 1;
+
+function showVP() {
+  if (VP === 1) {
+  document.getElementsByClassName('hideme2')[4].style.display = 'initial';
+  document.getElementsByClassName('experience')[0].innerHTML = '- Sales Production - Vente-priv&eacute;e 2016';
+  VP = 0;}
+  else {
+  document.getElementsByClassName('hideme2')[4].style.display = 'none';
+  document.getElementsByClassName('experience')[0].innerHTML = '+ Sales Production - Vente-priv&eacute;e 2016';
+  VP = 1;
+  }
+}
+
+
+//Expand Guerlain
+var Guerlain = 1;
+
+function showGuerlain() {
+  if (Guerlain === 1) {
+  document.getElementsByClassName('hideme2')[5].style.display = 'initial';
+  document.getElementsByClassName('experience')[1].innerHTML = '- Digital Marketing Assistant - Guerlain Canada 2015';
+  Guerlain = 0;}
+  else {
+  document.getElementsByClassName('hideme2')[5].style.display = 'none';
+  document.getElementsByClassName('experience')[1].innerHTML = '+ Digital Marketing Assistant - Guerlain Canada 2015';
+  Guerlain = 1;
   }
 }
