@@ -20,77 +20,31 @@
     }
 
 /*Media Queries*/
-/*Max Width 399px*/
-@media only screen and (max-width: 490px) {
-    * {
-        font-size:5vw;
-    }
-    .h1 {
-        font-size:9vw;
-    }
-    .grid {
-        grid-template-columns: 1fr;
-        grid-gap: 0% 0%;
-        margin: 0px 10px;
-    }
-    .expand {
-        display: none;
-    }
-}
 
-/*Min Width 400px*/
-@media only screen and (min-width: 500px) {
-    .grid {
-        grid-template-columns: 1fr;
-        grid-gap: 0% 0%;
-        margin: 0px 10px;
-    }
-    /*General*/
-    * {
-        font-size: 3.5vw;
-    }
-    .h1 {
-        font-size: 8vw;
-    }
-    /*Plus signs*/
-    .plus {
-        font-size: 5vw;
-    }
-    /*No Border*/
-    .right {
-        padding-right: 0%;
-        border-right: 0px;
-    }
-    .expand {
-        display: 'none';
-    }
-}
-
-/*Min Width 580px*/
-@media only screen and (min-width: 580px) {
-    
+/*Over 1200px*/
+@media only screen and (min-width: 1200px) {
     .grid {
         grid-template-columns: 1fr 2fr;
         grid-gap: 0% 3%;
-    }
-    /*General*/
-    * {
-        font-size: 2vw;
+        margin: 0px 10%;
     }
     .h1 {
-        font-size: 4vw;
+        font-size: 3.3vw;
     }
-    /*Plus signs*/
-    .plus {
-        font-size: 2.5vw;
+    * {
+        font-size: 1.2vw;
     }
-    /*Align right margin*/
-    .right {
-        padding-right: 10%;
-        border-right: 2px rgb(34, 34, 34) solid;
-    }
+}
+
+/*Over 900px*/
+@media only screen and (min-width: 900px) {
     .expand {
         display: initial;
+    }
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0% 3%;
+        margin: 0px 3%;
     }
 }
 
@@ -122,30 +76,76 @@
     }
 }
 
-/*Over 900px*/
-@media only screen and (min-width: 900px) {
+/*Min Width 580px*/
+@media only screen and (min-width: 580px) {
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0% 3%;
+    }
+    /*General*/
+    * {
+        font-size: 2vw;
+    }
+    .h1 {
+        font-size: 4vw;
+    }
+    /*Plus signs*/
+    .plus {
+        font-size: 2.5vw;
+    }
+    /*Align right margin*/
+    .right {
+        padding-right: 10%;
+        border-right: 2px rgb(34, 34, 34) solid;
+    }
     .expand {
         display: initial;
     }
+}
+
+/*Min Width 400px*/
+@media only screen and (min-width: 450px) {
     .grid {
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 0% 3%;
-        margin: 0px 3%;
+        grid-template-columns: 1fr;
+        grid-gap: 0% 0%;
+        margin: 0px 10px;
+    }
+    /*General*/
+    * {
+        font-size: 3.5vw;
+    }
+    .h1 {
+        font-size: 8vw;
+    }
+    /*Plus signs*/
+    .plus {
+        font-size: 5vw;
+    }
+    /*No Border*/
+    .right {
+        padding-right: 0%;
+        border-right: 0px;
+    }
+    .expand {
+        display: 'none';
     }
 }
 
-/*Over 1200px*/
-@media only screen and (min-width: 1200px) {
-    .grid {
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 0% 3%;
-        margin: 0px 10%;
+/*Max Width 399px*/
+@media only screen and (min-width: 200px) {
+    * {
+        font-size:5vw;
     }
     .h1 {
-        font-size: 3.3vw;
+        font-size:9vw;
     }
-    * {
-        font-size: 1.2vw;
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0% 0%;
+        margin: 0px 10px;
+    }
+    .expand {
+        display: none;
     }
 }
 
