@@ -271,7 +271,7 @@ b {
 .essecSubGrid {
     display: grid;
     grid-template-areas: "e f" "g f" "h f";
-    grid-template-columns: 8fr 1fr;
+    grid-template-columns: 5fr 1fr;
 }
 
 .e {
@@ -291,7 +291,7 @@ b {
 .conSubGrid {
     display: grid;
     grid-template-areas: "a b" "c b" "d b";
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 5fr 1fr;
 }
 
 .a {
@@ -305,4 +305,36 @@ b {
 }
 .d {
     grid-area: d;
+}
+
+/*Experience Subgrids*/
+.vpgrid {
+    display: grid;
+    grid-template-areas: "vpa vpc" "vpb vpc";
+    grid-template-columns: 5fr 1fr;
+}
+.vpa {
+    grid-area: vpa;
+}
+.vpb {
+    grid-area: vpb;
+}
+.vpc {
+    grid-area: vpc;
+}
+
+/*Guerlain*/
+.glgrid {
+    display: grid;
+    grid-template-areas: "gla glc" "glb glc";
+    grid-template-columns: 5fr 1fr;
+}
+.gla {
+    grid-area: gla;
+}
+.glb {
+    grid-area: glb;
+}
+.glc {
+    grid-area: glc;
 }
